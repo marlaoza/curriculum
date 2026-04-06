@@ -1,0 +1,306 @@
+% GitHub Repo and Documentation: https://github.com/celiobjunior/resume-template
+% Copyright © 2025 Celio B Junior. All rights reserved.
+% 
+% Licensed under the Apache License, Version 2.0 (the "License");
+% you may not use this file except in compliance with the License.
+% You may obtain a copy of the License at
+%
+%     http://www.apache.org/licenses/LICENSE-2.0
+%
+
+\documentclass[a4paper,10pt]{article}
+
+% Layout
+\usepackage{geometry}
+\geometry{top=1cm,bottom=1cm,left=1cm,right=1cm}
+\usepackage{parskip}
+\pagestyle{empty}
+
+% Fonts & language (XeLaTeX / LuaLaTeX only)
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\setdefaultlanguage{portuguese}
+\setotherlanguage{english}
+
+\setmainfont{TeX Gyre Termes}
+\setsansfont{TeX Gyre Heros}
+\setmonofont{TeX Gyre Cursor}
+
+% Colors & links
+\usepackage{xcolor}
+\definecolor{muted}{gray}{0.20}
+
+\usepackage{hyperref}
+\hypersetup{
+  pdftitle={CV Marlon Correia Bomfim Junior},
+  pdfauthor={Marlon Correia Bomfim Junior},
+  colorlinks=true,
+  linkcolor=black,
+  urlcolor=black
+}
+
+% Section formatting
+\usepackage{titlesec}
+\setcounter{secnumdepth}{0}
+
+\titleformat{\section}
+  {\sffamily\Large\bfseries}
+  {}
+  {0pt}
+  {}
+
+\titleformat{\subsection}
+  {\sffamily\bfseries}
+  {}
+  {0pt}
+  {}
+
+% Helpers
+\newcommand{\sectionend}{
+  \par\addvspace{0.75em}
+  \hrule
+  \addvspace{0.75em}
+}
+
+\newcommand{\company}[1]{{\bfseries #1}}
+\newcommand{\place}[1]{{\itshape #1}}
+\newcommand{\role}[1]{{\itshape\color{muted}#1}}
+\newcommand{\daterange}[1]{{\small\bfseries\color{muted}#1}}
+\newcommand{\tech}[1]{{\ttfamily #1}}
+
+\setlength{\emergencystretch}{2em}
+\begin{document}
+
+% --- CABEÇALHO ---
+\begin{flushleft}
+    {\LARGE \textbf{Marlon Correia Bomfim Junior}} 
+    \\ [0.1cm]
+    Praia Grande, SP, Brasil
+    \quad | \quad
+    {\ttfamily \href{https://github.com/marlaoza}{Github}
+    \quad | \quad
+    \href{https://www.linkedin.com/in/marlon-correia-bomfim-junior-36a1a9230}{Linkedin} 
+    \quad | \quad
+    \href{mailto:marlonbomfim.jr@gmail.com}{marlonbomfim.jr@gmail.com} 
+    }
+\end{flushleft}
+
+% --- SEÇÕES ---
+
+\section{Experiência}
+    \subsection*{\texorpdfstring{
+      \company{OpenQuant}
+      \hfill
+      \place{Praia Grande, SP, Brasil}
+    }{
+      OpenQuant -- Praia Grande, SP, Brasil
+    }}
+    \par
+    \role{Desenvolvedor Júnior}
+    \hfill
+    \daterange{Fev 2024 -- Atual}
+        
+    Atuação Full Stack no desenvolvimento da plataforma OpenQuant.  
+    Criação de componentes e interfaces responsivas e modernas em React.  
+    Desenvolvimento e planejamento de APIs escaláveis em .NET, com migrations e paradigmas de injeção de dependências.  
+    Manejo de dados em PostgreSQL e hot cache com Redis.  
+    Dockerização e deploy de ambientes integrados com Kubernetes.
+
+
+    \subsection*{\texorpdfstring{
+      \company{MCB Solution}
+      \hfill
+      \place{Remoto}
+    }{
+      MCB Solution -- Remoto
+    }}
+    \par
+    \role{Desenvolvedor Júnior}
+    \hfill
+    \daterange{Fev 2023 -- Fev 2024}
+        
+   Desenvolvimento de diversas plataformas de automação para clientes em Angular e React. Montagem de fluxos e ferramentas de automação em Python e C\#. Integração de robôs atuando em tarefas reais.
+
+    \subsection*{\texorpdfstring{
+      \company{MCB Solution}
+      \hfill
+      \place{Remoto}
+    }{
+      MCB Solution -- Remoto
+    }}
+    \par
+    \role{Estagiário de Desenvolvimento}
+    \hfill
+    \daterange{Ago 2022 -- Fev 2023}
+        
+    Desenvolvimento de algoritmos de automação para geração de relatórios, extratos e notas integradas a ferramentas. Planejamento de arquiteturas de ASP.NET MVC flexíveis gerenciando ambientes de BackOffice. Desenvolvimento de interfaces WPF+ para robôs de boletagem.
+
+
+  
+
+\sectionend
+
+% ------
+
+\section{Educação}
+
+    \subsection*{\texorpdfstring{
+      \company{Universidade Santa Cecília}
+      \hfill
+      \place{Santos, SP, Brasil}
+    }{
+      Universidade Santa Cecília -- Santos, SP, Brasil
+    }}
+    \par
+    \role{Bacharelado em Engenharia da Computação}
+    \hfill
+    \daterange{Fev 2023 - Dez 2027}
+
+    \sectionend
+
+\section{Projetos}
+
+    \subsection*{\texorpdfstring{
+      \company{Oficina Curto Circuito}
+      \hfill
+      \place{Guarujá, SP, Brasil}
+    }{
+      Oficina Curto Circuito -- Guarujá, SP, Brasil
+    }}
+    \par
+    \role{Professor de Eletrônica}
+    \hfill
+    \daterange{Dez 2025 - Atual}
+        
+    Projeto em parceria com a Escola Estadual Vicente de Carvalho, onde ministro, juntamente com meus colegas, 
+    uma oficina de eletrônica e automação para o oitavo e nono ano, ensinando desde circuitos básicos com leds 
+    até projetos mais robustos com microcontroladores, a fim de compartilhar conhecimento e capacitá-los a montar seus próprios projetos.
+
+    \subsection*{\texorpdfstring{
+    \company{Salve a Nave - Plataforma Educativa}
+    \hfill
+    \place{Santos, SP, Brasil}
+    }{
+      Salve a Nave - Plataforma Educativa -- Santos, SP, Brasil
+    }}
+    \par
+    \role{Desenvolvedor de aplicação C\#}
+    \hfill
+    \daterange{Ago 2024 - Atual}
+        
+    FINALISTA COBRIC 2025 - Software interativo que apresenta uma série de desafios em formato de minijogos que se encaixam no contexto lúdico de uma nave espacial, feito com C\#, como intervenção educacional, criando um espaço para crianças desenvolverem habilidades 
+    motoras, sociais e de raciocínio lógico, além de aprimorarem o conhecimento passado em sala de aula. 
+    Conta com uma ferramenta para criação de fases, onde professores e/ou responsáveis tem controle das matérias abordadas.
+    
+    \textbf{Links}
+    
+    {\ttfamily
+    \par
+    \begin{tabular*}{\linewidth}{@{\extracolsep{\fill}} c c c }
+    \href{https://zenodo.org/records/17778281}{DOI} & 
+    \href{https://www.conic-semesp.org.br/anais/files/2025/trabalho-1000014248.pdf?1770686772}{CONIC 2025} &
+    \href{https://ojs.unisanta.br/COB/article/view/3203/3079}{COBRIC 2025}
+    \end{tabular*}
+    }
+
+
+    \subsection*{\texorpdfstring{
+    \company{ELIB - Interprete de LIBRAS}
+    \hfill
+    \place{Santos, SP, Brasil}
+    }{
+      ELIB - Interprete de LIBRAS -- Santos, SP, Brasil
+    }}
+    \par
+    \role{Desenvolvedor de aplicação mobile Kotlin + Swift}
+    \hfill
+    \daterange{Jan 2024 - Dez 2024}
+        
+    FINALISTA COBRIC 2024 - Aplicativo mobile nativo, desenvolvido para Android com Kotlin e iOS com Swift, que integra via TensorFlow um modelo de visão computacional criado do zero para classificação de gestos de LIBRAS.  
+    O aplicativo apresenta uma interface de fácil acesso, com tradução bidirecional: uma captando gestos pela câmera e convertendo em texto, e outra recebendo input por voz ou texto e traduzindo para sinais de LIBRAS.
+    
+    \textbf{Links}
+    
+    {\ttfamily
+    \par
+    \begin{tabular*}{\linewidth}{@{\extracolsep{\fill}} c c c }
+    \href{https://zenodo.org/records/14040753}{DOI} & 
+    \href{https://www.conic-semesp.org.br/anais/files/2024/trabalho-1000011871.pdf?1770686972}{CONIC 2024} &
+    \href{https://periodicos.unisanta.br/COB/article/view/2292/2315}{COBRIC 2024}
+    \end{tabular*}
+    }
+    
+\sectionend
+
+% ------
+
+\section{Atividades} 
+
+    \subsection*{\texorpdfstring{
+    \company{Game Jams}
+    \hfill
+    \place{Remoto}
+    }{
+      Game Jams -- Remoto
+    }}
+    \par
+    \role{Ilustrador / Desenvolvedor}
+    \hfill
+    \daterange{Jan 2024 e Ago 2025}
+        
+    Distribuição e manejamento de tarefas para desenvolvimento completo de jogos em 7 dias. Planejamento e execução de sistemas completos, escaláveis e práticos em C\# com Unity.
+    Desenvolvimento de artes do zero com ilustrações próprias.
+    
+    \textbf{Links}
+    
+    \par
+    {\ttfamily
+    \begin{tabular*}{\linewidth}{@{\extracolsep{\fill}} c c c }
+    \href{https://arthurpalladino.itch.io/nothing-can-go-wrong-at-the-theater}{GAME JAM 01/2024} & 
+    \href{https://arthurpalladino.itch.io/take-a-risk-or-get-cut-off}{GAME JAM 08/2025}
+    \end{tabular*}
+    }
+    
+\sectionend
+% ------
+
+\section{Habilidades}
+    \subsection*{Desenvolvimento}
+        \subsubsection*{Linguagens}
+        {\ttfamily 
+            Javascript (Typescript) \,|\, 
+            C \,|\, 
+            C++ \,|\, 
+            C\# \,|\, 
+            Python \,|\, 
+            AVR Assembly
+        }
+        \subsubsection*{Embarcados e Hardware}
+        {\ttfamily
+        ESP32 \,|\, 
+        Microcontroladores ATMega
+        \subsubsection*{Frameworks}
+        React \,|\, 
+        Angular \,|\, 
+        .NET \,|\, 
+        Kotlin
+        }
+    \vspace{0.2em}
+    \subsection*{Softwares de Criação}
+    {\ttfamily
+    Photoshop (Manipulação de imagens, ilustração digital) \,|\, 
+    DaVinci Resolve (Edição de vídeo e efeitos especiais) \,|\, 
+    Unity (Criação de jogos e ferramentas) \,|\, 
+    KiCad (Prototipação de placas de circuito impresso) \,|\, 
+    Fusion 360 (Prototipação de peças 3D)
+    }
+    \vspace{0.2em}
+    \subsection*{Idiomas}
+    {\ttfamily
+    Português (Nativo) \,|\, 
+    Inglês (Avançado) \,|\, 
+    Espanhol (Básico)
+    }
+\sectionend
+\end{document}
+
